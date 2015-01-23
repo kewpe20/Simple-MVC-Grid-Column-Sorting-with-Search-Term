@@ -1,0 +1,11 @@
+/* 
+    Created on : Jan 15, 2015, 9:59:05 AM
+    Author     : William
+*/
+body {
+    padding-top:60px;
+}
+
+@-moz-document url-prefix() {
+  fieldset { display: table-cell; }
+}
