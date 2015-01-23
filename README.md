@@ -1,7 +1,12 @@
 ## Title:  Simple MVC with table sorting by column, sort order, and a search term
 - Author: William Egan
 - website: http://www.monarchbizdev.com
-- Online Tutorial:  COMING SOON!
+
+## Tutorials:
+- 1) Setting up local install of Simple MVC Framework with Twitter Bootstrap 
+http://www.monarchbizdev.com/simple-mvc-twitter-bootstrap/
+- 2) Column Sorting and Search Term 
+COMING SOON!
 
 ## Packaged with this project:   
 -  1) Simple MVC Framework ver 2.1   http://simplemvcframework.com/php-framework
