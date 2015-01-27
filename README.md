@@ -6,7 +6,7 @@
 - 1) Setting up local install of Simple MVC Framework with Twitter Bootstrap 
 http://www.monarchbizdev.com/simple-mvc-twitter-bootstrap/
 - 2) Column Sorting and Search Term 
-COMING SOON!
+http://www.monarchbizdev.com/simple-mvc-pagination-tutorial-sorting-search-term/
 
 ## Packaged with this project:   
 -  1) Simple MVC Framework ver 2.1   http://simplemvcframework.com/php-framework

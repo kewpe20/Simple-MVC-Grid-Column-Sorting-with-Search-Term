@@ -149,7 +149,8 @@ class paginatorPlus{
                 $this->_sortOrd = $this->get_sort_order_default();
                 $flipFlag = 0;
             }
-
+            // If any of the sorting rules did not trigger then 
+            // we flip the order from ASC to DESC or vice-versa
             if ($flipFlag == 1) {
                 $this->_sortOrd = $this->flip_sort_order();
             }

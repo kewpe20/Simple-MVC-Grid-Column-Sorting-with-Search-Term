@@ -66,19 +66,19 @@ use \core\router,
 //define routes
 //Router::any('', '\controllers\welcome@index');
 //Router::any('/subpage', '\controllers\welcome@subpage');
-Router::any('contacts', '\controllers\contacts@contacts');
-Router::any('contacts/add', '\controllers\contacts@add');
-Router::any('contacts/edit/(:num)', '\controllers\contacts@edit');
-Router::any('contacts/delete/(:num)', '\controllers\contacts@delete');
+//Router::any('contacts', '\controllers\contacts@contacts');
+//Router::any('contacts/add', '\controllers\contacts@add');
+//Router::any('contacts/edit/(:num)', '\controllers\contacts@edit');
+//Router::any('contacts/delete/(:num)', '\controllers\contacts@delete');
 
 // HOME
 Router::any('', '\controllers\home@index');
 
 // CLIENTS CRUD
 Router::any('clients', '\controllers\clients@index');
-Router::any('clients/add', '\controllers\clients@add');
-Router::any('clients/edit/(:num)', '\controllers\clients@edit');
-Router::any('clients/delete/(:num)', '\controllers\clients@delete');
+//Router::any('clients/add', '\controllers\clients@add');
+//Router::any('clients/edit/(:num)', '\controllers\clients@edit');
+//Router::any('clients/delete/(:num)', '\controllers\clients@delete');
 
 //if no route found
 Router::error('\core\error@index');

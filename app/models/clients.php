@@ -13,6 +13,11 @@ class Clients extends \core\model {
 		return $this->_db->select("SELECT * FROM ".$this->tableName." ORDER BY companyName ASC");
 	}       
         
+        /* 
+         * Dynamically creates the query that returns the results
+         * based off sort column, sort order, search term, and limit.        
+         */
+        
         public function get_all_plus($limit, $sortCol, $sO, $srchTerm=''){            
             // Sort Order
             if ($sO == 2) {

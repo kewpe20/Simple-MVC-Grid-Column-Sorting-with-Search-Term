@@ -6,6 +6,7 @@
 
 ?>
     <h1><?php echo $data['title'] ?></h1>
+    <!-- Adding a row for the Search Term input field -->
     <div class="row">
         <div class="col-sm-2 text-left"></div>
         <div class="col-sm-6 text-left">
@@ -21,16 +22,18 @@
     </div>
     <br>
    
+    <!-- Column Headers with links that pass the sorting and search term values to the next call to the same page -->
     <div class="table-responsive">
         <table class="table table-striped">
             <tr class="">
                 <th class="col-sm-3"><a href='<?php echo DIR; ?>clients/?p=<?php echo $data['pageNum']; ?>&sC=3&sO=<?php echo $data['sO']; ?>&sT=<?php echo $data['htmlsrchTerm']; ?>'>Company</a></th>
                 <th class="col-sm-3"><a href='<?php echo DIR; ?>clients/?p=<?php echo $data['pageNum']; ?>&sC=2&sO=<?php echo $data['sO']; ?>&sT=<?php echo $data['htmlsrchTerm']; ?>'>Account Number</a></th>
                 <th class="col-sm-3"><a href='<?php echo DIR; ?>clients/?p=<?php echo $data['pageNum']; ?>&sC=4&sO=<?php echo $data['sO']; ?>&sT=<?php echo $data['htmlsrchTerm']; ?>'>Last Update</a></th>
-                <th class="col-sm-3">Action</a></th>
+                <th class="col-sm-3">Action</th>
             </tr>   
 
 <?php
+    // Loop through the results returned from the database and display them to the user.
     if($data['records']){
         foreach($data['records'] as $row){
 ?>
@@ -50,6 +53,7 @@
     ?>
         </table>
     </div>
+    <!-- Output the Pagination Navigation bar -->
     <div class="row">
         <div class="col-sm-12 text-center"><?php echo $data['page_links']; ?></div>
     </div>
@@ -60,6 +64,7 @@
 </div>
 <!-- Page Specific Javascript -->
 <script>
+    // Action when search term icon is clicked.
     $("#srchBtn").on('click', function(){
         var srchTerm = $('#srchTerm').val();
         // When Search Icon clicked, default all sort values
@@ -68,6 +73,7 @@
         window.location = url; 
     });
     
+    // Future functionality
     $("a#addRec").on('click', function(){
         alert ("Adding Functionality later!");
     //     window.location = "<?php echo DIR; ?>clients/add";    
