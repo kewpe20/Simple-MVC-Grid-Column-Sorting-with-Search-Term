@@ -13,7 +13,7 @@
             <a id="addRec" class="btn btn-primary btn-med">Add New</a>
         </div>
         <div class="col-sm-3 input-group">
-            <input id="srchTerm" type="text" placeholder="company name...." class="form-control" value="<?php echo $data['htmlsrchTerm']; ?>">
+            <input id="srchTerm" type="text" placeholder="company name...." class="form-control" value="<?php echo $data['srchTerm']; ?>">
             <span class="input-group-btn">
                 <button id="srchBtn" class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
             </span>
