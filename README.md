@@ -21,13 +21,17 @@ http://www.monarchbizdev.com/simple-mvc-pagination-tutorial-sorting-search-term/
 -  5)  I changed the default page from welcome to home.
 
 ## Installation
- - I included Simple MVC's read me.  It's called README_SimpleMVC.md
+I included Simple MVC's read me.  It's called README_SimpleMVC.md
  - 1) Extract/Unzip  to your local server site folder
         - a) change folder name from mbdsample to whatever you want, or don't.....
  - 2) Set up Virtual Local Host
  - 3) Populate your DB by running app/sql/simplembv.sql
- - You really only need the clients table...the other 2 tables are used for a `contacts` video tutorial found at http://simplemvcframework.com/screencasts/v2/database-basics-with-c-r-u-d-starter-application
- - 4) Open app/core/config.php and define your site address (DIR), Database Vars (DB_) Page Limit (PAGE_LIMIT) & timezone. 
+    You really only need the clients table...the other 2 tables are used for a `contacts` video tutorial found at http://simplemvcframework.com/screencasts/v2/database-basics-with-c-r-u-d-starter-application
+ - 4) Open app/core/config.php and define;
+    - a) your site address (DIR) 
+    - b) Database Vars (DB_) 
+    - c) Page Limit (PAGE_LIMIT)
+    - d) time zone 
 
 
 ## Requirements
@@ -45,11 +49,12 @@ This approach is legal (I'm not violating proprietary rights), and true represen
 I selected Simple MVC because of it's light weight as opposed to a framework like ZEND, Laravel, Yii, etc.
 If I would have gone with a more robust MVC I would not be able to provide this as a sample of "My Work", as it would only prove I am proficient with a particular Framework. 
 
-I decided to create functionality to sort by table column and column order, and add a search feature to the Simple MVC's paginator because it is common functionality and requires a nice code sample.
+I decided to create functionality to sort by table column and column order, and add a search feature to the Simple MVC's paginator because it is common functionality and provides a nice, clean code sample.
 
 ## TO DO:
-  Putting a & in the Search Term input box causes everything afterwards and including the & to be ignored/wiped out.
-  I think there is a conflict with &'s and how the paginator or router helper classes react to &'s
-  If someone has the time and the inclination to resolve the conflict before I get a chance, that would be very nice of you.
+  There appears to be some issues with special characters in the search term feature where this sample application has been uploaded to my Godaddy shared hosting server.  
+  The search term functionality works correctly on my local server.  
+  I am currently in the process of determining the cause of the functionality inconsistency between the 2 servers.
+  Possibilities include different default character settings, different versions of PHP, etc.
  
 
