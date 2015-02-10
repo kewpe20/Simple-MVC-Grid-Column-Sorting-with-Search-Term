@@ -51,10 +51,6 @@ If I would have gone with a more robust MVC I would not be able to provide this 
 
 I decided to create functionality to sort by table column and column order, and add a search feature to the Simple MVC's paginator because it is common functionality and provides a nice, clean code sample.
 
-## TO DO:
-  There appears to be some issues with special characters in the search term feature where this sample application has been uploaded to my Godaddy shared hosting server.  
-  The search term functionality works correctly on my local server.  
-  I am currently in the process of determining the cause of the functionality inconsistency between the 2 servers.
-  Possibilities include different default character settings, different versions of PHP, etc.
+
  
 
